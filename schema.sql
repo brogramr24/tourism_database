@@ -3,7 +3,7 @@ CREATE DATABASE IF NOT EXISTS tourism_db;
 USE tourism_db;
 
 -- Users table (tourists, guides, admins)
-CREATE TABLE users (
+CREATE TABLE IF NOT EXISTS users (
     user_id INT AUTO_INCREMENT PRIMARY KEY,
     email VARCHAR(255) UNIQUE NOT NULL,
     password_hash VARCHAR(255) NOT NULL,
